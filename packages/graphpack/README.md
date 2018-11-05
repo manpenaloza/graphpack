@@ -37,7 +37,7 @@ src
 └── schema.graphql
 ```
 
-In your schema, add some sample types in [SDL](https://graphql.org/learn/schema/#type-language):
+In `src/schema.graphql`, add some sample types in [SDL](https://graphql.org/learn/schema/#type-language):
 
 ```graphql
 type Query {
@@ -153,7 +153,7 @@ type Article {
 }
 
 type Query {
-  article: Article
+  article(id: String): Article
   articles: [Article!]!
 }
 ```
